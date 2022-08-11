@@ -1,0 +1,129 @@
+@media only screen and (max-width: 480px) {
+    .border_b_nav, *[class~="border_b_nav"] {
+        border-bottom: 5px solid #ffffff !important;
+    }
+    .bg_white, *[class~="bg_white"] {
+        background-color: #ffffff !important;
+    }
+    .mb_switch_bg_image{
+        background: #ffffff url(https://kikeestrada.github.io/test_prodigious/images/mb_top_banner_bg.png)
+        no-repeat bottom center/contain !important;
+        background-size: 100% auto !important;
+        height: 188px !important;
+    }
+    .mb_height{height:188px !important;}    
+    .top_nav_text_1, *[class~="top_nav_text_"] { 
+        font-size: 16px !important;
+        line-height: 16px !important;
+    }
+    .top_nav_text_2, *[class~="top_nav_text_2"] { 
+        font-size: 13px !important;
+        line-height: 12px !important;
+    }
+    .top_nav_text_3, *[class~="top_nav_text_3"] { 
+        font-size: 14px !important;
+        line-height: 14px !important;
+        text-align: left !important;
+        padding-bottom: 17px !important;
+    }
+
+    .stack_plr, *[class~="stack_plr"] { 
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .green_banner_left_padding, *[class~="green_banner_left_padding"] { 
+        padding-left: 10px !important;
+    }
+    .green_banner_center_padding, *[class~="green_banner_center_padding"] { 
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+    .green_banner_right_padding, *[class~="green_banner_right_padding"] { 
+        padding-right: 10px !important;
+    }
+    .bottom_nav_text, *[class~="bottom_nav_text"] { 
+        font-size: 15px !important;
+        line-height: 18px !important;
+        padding: 8px 0px 8px 0px !important;
+    }
+    .bottom_nav_white_space, *[class~="bottom_nav_white_space"] { 
+        background-color: #ffffff !important;
+        padding-bottom: 6px !important;
+    }
+    .connect_us_text, *[class~="connect_us_text"] { 
+        font-size: 15px !important;
+        line-height: 18px !important;
+        text-transform: capitalize !important;
+        font-weight: normal !important;        
+    }
+    .bottom_border_box_text_1, *[class~="bottom_border_box_text_1"] { 
+        font-size: 14px !important;
+        line-height: 15px !important;
+    }
+    .bottom_border_box_text_2, *[class~="bottom_border_box_text_2"] { 
+        font-size: 13px !important;
+        line-height: 15px !important;
+    }
+    .footer_text_1, *[class~="footer_text_1"] { 
+        font-size: 13px !important;
+        line-height: 13px !important;
+        padding: 30px 0px 27px 0px !important;
+    }
+    .footer_text_2, *[class~="footer_text_2"] { 
+        font-size: 11px !important;
+        line-height: 13px !important;
+    }
+
+    .bg_main_padding, *[class~="bg_main_padding"] { 
+        padding: 0 28px 0 28px !important;
+     }
+     .cta_padding, *[class~="cta_padding"] { 
+        padding: 0px 10px 0px 10px !important;
+     }
+
+     .cta_align_text, *[class~="cta_align_text"] { 
+        text-align: left !important;
+     }
+
+     .cta_align_arrow, *[class~="cta_align_text"] { 
+        float: right !important;
+        position: relative !important;
+        top: 3px !important;
+     }
+
+     .bg_text_1, *[class~="bg_text_1"] { 
+        font-size: 14px !important;
+        line-height: 19px !important;
+        padding: 20px 0px 0px 0px !important;
+    }
+
+    .bg_text_2, *[class~="bg_text_2"] { 
+        font-size: 21px !important;
+        line-height: 21px !important;
+        padding: 0px 0px 50px 0px !important
+    }
+    .green_banner_padding_bottom_mb, *[class~="green_banner_padding_bottom_mb"] {        
+        padding-top: 10px !important;
+    }
+    .green_banner_padding_bottom_mb_2, *[class~="green_banner_padding_bottom_mb_2"] {        
+        padding-top: 25px !important;
+    }  
+    
+    .mb_line_color_black, *[class~="mb_line_color_black"] {        
+        color: #666666 !important;
+    }  
+
+    .bg_check, *[class~="bg_check"] {        
+        padding: 20px 0px 0px 0px !important;
+    }  
+
+    
+
+
+     
+}
+@media only screen and (max-width: 414px) {}
+@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 360px) {}
+@media only screen and (max-width: 320px) {}
+/* RESPONSIVE CLASSES */

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>💌Email Previewer</title>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<style media="screen">
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
+body {
+  font-family: 'Barlow Condensed', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #435359;
+  background: #f6f6f6;
+}
+iframe {
+  height: 5000px;
+  margin: 0 auto;
+  box-shadow: 1px 2px 5px #aaa;
+  transition: width 0.5s ease-in;
+}
+.dropdown {
+  padding: 20px;
+}
+.col-left {
+  padding-left: 50px;
+  
+}
+.col-right {
+  padding-right: 50px;
+}
+.col-left, .col-right {
+  padding-bottom: 20px;
+  background-color: #FFFFFF;
+}
+.footer {
+  height: 50px;
+}
+
+</style>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>E-mail previewer</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8 col-left">
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Desktop size
+  <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a data-width="100%" data-device="desktop" href="#">100%</a></li>
+          <li><a data-width="800px" data-device="desktop" href="#">800</a></li>
+          <li><a data-width="740px" data-device="desktop" href="#">740</a></li>
+          <li><a data-width="640px" data-device="desktop" href="#">640</a></li>
+          <li><a data-width="600px" data-device="desktop" href="#">600</a></li>
+        </ul>
+        <div id="screenshot_desktop"></div>
+      </div>
+      <iframe src="index.html" frameborder="0" id="desktop" width="600"></iframe>
+    </div>
+    <div class="col-sm-4 col-right">
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Mobile size
+  <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a data-width="320px" data-device="mobile" href="#">iPhone 5 (320px)</a></li>
+          <li><a data-width="360px" data-device="mobile" href="#">Galaxy S5 (360px)</a></li>
+          <li><a data-width="375px" data-device="mobile" href="#">iPhone 6 (375px)</a></li>
+          <li><a data-width="414px" data-device="mobile" href="#">iPhone 6 Plus (414px)</a></li>
+        </ul>
+        <div id="screenshot_mobile"></div>
+
+      </div>
+      <iframe src="index.html" frameborder="0" id="mobile" width="320"></iframe>
+    </div>
+  </div>
+  <div class="row footer">&nbsp;</div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+<script type="text/javascript">
+//https://www.w3schools.com/php/func_mail_mail.asp
+//https://css-tricks.com/sending-nice-html-email-with-php/
+$(function(){
+  //init
+  //console.log("init");
+  var options = $('ul.dropdown-menu > li > a');
+  options.click(function(evt){
+    var $this = $(this);
+    var width = $this.data('width');
+    var device = $this.data('device');
+    //console.log(width, device);
+    if(device == "desktop"){
+      $('iframe#desktop').css('width', width);
+      setTimeout(function(){
+        resizeIframe($('iframe#desktop')[0]);
+      }, 1000);
+    }else{
+      $('iframe#mobile').css('width', width);
+      setTimeout(function(){
+        resizeIframe($('iframe#mobile')[0]);
+      }, 1000);
+    }
+  });
+});
+</script>
+
+</body>
+</html>
